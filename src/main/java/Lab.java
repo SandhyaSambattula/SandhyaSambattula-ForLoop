@@ -41,10 +41,11 @@ public class Lab {
      *      @return the string of all numbers between start and end, back-to-back. The string is inclusive of start and exclusive of end.
      */
     public String returnNumbers(int start, int end){
-        String buildingString = ""; 
+        StringBuilder sb = new StringBuilder(); 
        for(int i = start; i <= end; i++){
-       buildingString +=i;
+        sb.append(i);
        }
-        return buildingString;
+        return sb.toString();
     }
-}
+    
+
