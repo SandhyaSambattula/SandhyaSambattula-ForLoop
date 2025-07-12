@@ -42,10 +42,11 @@ public class Lab {
      */
     public String returnNumbers(int start, int end){
         StringBuilder sb = new StringBuilder(); 
-       for(int i = start; i <= end; i++){
-        sb.append(i);
+       for(int i = start; i < end; i++){
+        sb.append(i).appen("");
        }
-        return sb.toString();
+        return sb.toString().trim();
+    
     }
     
 
